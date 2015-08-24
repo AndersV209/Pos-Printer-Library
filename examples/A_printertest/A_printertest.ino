@@ -1,9 +1,8 @@
 /*------------------------------------------------------------------------
-  Example sketch for Adafruit Thermal Printer library for Arduino.
+  Example sketch for POS Printer library for Arduino.
   Demonstrates a few text styles & layouts, bitmap printing, etc.
 
-  IMPORTANT: DECLARATIONS DIFFER FROM PRIOR VERSIONS OF THIS LIBRARY.
-  This is to support newer & more board types, especially ones that don't
+  There is support for newer & more board types, especially ones that don't
   support SoftwareSerial (e.g. Arduino Due).  You can pass any Stream
   (e.g. Serial1) to the printer constructor.  See notes below.
 
@@ -18,18 +17,18 @@
 // Here's the new syntax when using SoftwareSerial (e.g. Arduino Uno) ----
 // If using hardware serial instead, comment out or remove these lines:
 
-/*#include "SoftwareSerial.h"
+#include "SoftwareSerial.h"
 #define TX_PIN 6 // Arduino transmit  YELLOW WIRE  labeled RX on printer
 #define RX_PIN 5 // Arduino receive   GREEN WIRE   labeled TX on printer
 
 SoftwareSerial mySerial(RX_PIN, TX_PIN); // Declare SoftwareSerial obj first
-Pos_Printer printer(&mySerial);     // Pass addr to printer constructor*/
+Pos_Printer printer(&mySerial);     // Pass addr to printer constructor
 // Then see setup() function regarding serial & printer begin() calls.
 
 // Here's the syntax for hardware serial (e.g. Arduino Due) --------------
 // Un-comment the following line if using hardware serial:
 
-Pos_Printer printer(&Serial1);      // Or Serial2, Serial3, etc.
+//Pos_Printer printer(&Serial1);      // Or Serial2, Serial3, etc.
 
 // -----------------------------------------------------------------------
 
@@ -41,8 +40,8 @@ void setup() {
   pinMode(7, OUTPUT); digitalWrite(7, LOW);
 
   // NOTE: SOME PRINTERS NEED 9600 BAUD instead of 19200, check test page.
-  //mySerial.begin(9600);  // Initialize SoftwareSerial
-  Serial1.begin(9600); // Use this instead if using hardware serial
+  mySerial.begin(9600);  // Initialize SoftwareSerial
+  //Serial1.begin(9600); // Use this instead if using hardware serial
   printer.begin();        // Init printer (same regardless of serial type)
 
   // The following calls are in setup(), but don't *need* to be.  Use them

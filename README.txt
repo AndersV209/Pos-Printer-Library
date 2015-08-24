@@ -8,14 +8,11 @@ But can have rs-232 or other cards in the back, that convert othersignals to ttl
 ////ARDUINO LIBRARY LOCATION////
 
 On your Mac:: In (home directory)/Documents/Arduino/Libraries
-
 On your PC:: My Documents\Arduino\libraries
-
 On your Linux box: (home directory)/sketchbook/libraries
-
 
 Written by Anders Vestergaard, with contributions from the open source community.  Originally based on adafruit thermal printer library https://github.com/adafruit/Adafruit-Thermal-Printer-Library
 MIT license, all text above must be included in any redistribution.
 
 
-If you dont need to print danish charaters like "√¶√∏√•√Ü√ò√Ö" then you should comment the line in POS_printer.cpp that defines DENMARK
+If you dont need to print danish charaters like "Ê¯Â∆ÿ≈" then you should comment the line in POS_printer.cpp that defines DENMARK

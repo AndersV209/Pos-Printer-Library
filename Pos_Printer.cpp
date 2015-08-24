@@ -1,24 +1,14 @@
 /*------------------------------------------------------------------------
-  Custom version with cut function
-
-
-
-  An Arduino library for the Adafruit Thermal Printer:
-
-  https://www.adafruit.com/product/597
+  An Arduino library for a POS(point of sale) Printer:
 
   These printers use TTL serial to communicate.  One pin (5V or 3.3V) is
   required to issue data to the printer.  A second pin can OPTIONALLY be
   used to poll the paper status, but not all printers support this, and
   the output on this pin is 5V which may be damaging to some MCUs.
 
-  Adafruit invests time and resources providing this open source code.
-  Please support Adafruit and open-source hardware by purchasing products
-  from Adafruit!
-
-  Written by Limor Fried/Ladyada for Adafruit Industries, with
-  contributions from the open source community.  Originally based on
-  Thermal library from bildr.org
+  Written by Anders Vestergaard, with contributions from the open source 
+  community. Originally based on adafruit thermal printer library 
+  https://github.com/adafruit/Adafruit-Thermal-Printer-Library 
   MIT license, all text above must be included in any redistribution.
   ------------------------------------------------------------------------*/
 

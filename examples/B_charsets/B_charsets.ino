@@ -1,5 +1,5 @@
 /*------------------------------------------------------------------------
-  Example sketch for Adafruit Thermal Printer library for Arduino.
+  Example sketch for POS Printer library for Arduino.
   Demonstrates some of the available alternate characters.
   See 'A_printertest' sketch for a more generalized printing example.
 
@@ -12,18 +12,18 @@
 // Here's the syntax when using SoftwareSerial (e.g. Arduino Uno) --------
 // If using hardware serial instead, comment out or remove these lines:
 
-/*#include "SoftwareSerial.h"
+#include "SoftwareSerial.h"
 #define TX_PIN 6 // Arduino transmit  YELLOW WIRE  labeled RX on printer
 #define RX_PIN 5 // Arduino receive   GREEN WIRE   labeled TX on printer
 
 SoftwareSerial mySerial(RX_PIN, TX_PIN); // Declare SoftwareSerial obj first
-Pos_Printer printer(&mySerial);     // Pass addr to printer constructor*/
+Pos_Printer printer(&mySerial);     // Pass addr to printer constructor
 // Then see setup() function regarding serial & printer begin() calls.
 
 // Here's the syntax for hardware serial (e.g. Arduino Due) --------------
 // Un-comment the following line if using hardware serial:
 
-Pos_Printer printer(&Serial1);      // Or Serial2, Serial3, etc.
+//Pos_Printer printer(&Serial1);      // Or Serial2, Serial3, etc
 
 // -----------------------------------------------------------------------
 
@@ -34,8 +34,8 @@ void setup() {
   // wired up the same way (w/3-pin header into pins 5/6/7):
   pinMode(7, OUTPUT); digitalWrite(7, LOW);
 
-  //mySerial.begin(9600);  // Initialize SoftwareSerial
-  Serial1.begin(9600); // Use this instead if using hardware serial
+  mySerial.begin(9600);  // Initialize SoftwareSerial
+  //Serial1.begin(9600); // Use this instead if using hardware serial
   printer.begin(50);        // Init printer (same regardless of serial type)
 
   printer.underlineOn();
