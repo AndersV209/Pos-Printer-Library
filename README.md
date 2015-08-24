@@ -16,3 +16,6 @@ On your Linux box: (home directory)/sketchbook/libraries
 
 Written by Anders Vestergaard, with contributions from the open source community.  Originally based on adafruit thermal printer library https://github.com/adafruit/Adafruit-Thermal-Printer-Library
 MIT license, all text above must be included in any redistribution.
+
+
+If you dont need to print danish charaters like "æøåÆØÅ" then you should comment the line in POS_printer.cpp that defines DENMARK
