@@ -1,0 +1,53 @@
+#######################################################
+#  keywords.txt - keywords file for the PosPrinter library
+
+#  Created by Anders Vestergaard of Aug 23th 2015
+
+#  Released as MIT license
+
+#######################################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+PosPrinter	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+test	KEYWORD2
+print	KEYWORD2
+print	KEYWORD2
+println	KEYWORD2
+println	KEYWORD2
+printBarCode	KEYWORD2
+printFancyBarCode	KEYWORD2
+boldOn	KEYWORD2
+boldOff	KEYWORD2
+sleep	KEYWORD2
+wake	KEYWORD2
+setSize	KEYWORD2
+setBarcodeHeight	KEYWORD2
+feed	KEYWORD2
+tab	KEYWORD2
+justify	KEYWORD2
+doubleHeightOn	KEYWORD2
+doubleHeightOff	KEYWORD2
+inverseOn	KEYWORD2
+inverseOff	KEYWORD2
+setDefault	KEYWORD2
+cut	KEYWORD2
+beep	KEYWORD2
+setCharset	KEYWORD2
+setCodePage	KEYWORD2
+underlineOn	KEYWORD2
+underlineOff	KEYWORD2
+printBitmap	KEYWORD2
+
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################
