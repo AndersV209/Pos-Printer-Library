@@ -15,4 +15,6 @@ Written by Anders Vestergaard, with contributions from the open source community
 MIT license, all text above must be included in any redistribution.
 
 
-If you dont need to print danish charaters like "Ê¯Â∆ÿ≈" then you should comment the line in POS_printer.cpp that defines DENMARK
+If you dont need to print danish charaters like "√¶√∏√•√Ü√ò√Ö" then you should comment the line in POS_printer.cpp that defines DENMARK
+
+I have a danish wiki page for the project on the local hackerspace's wiki http://wiki.hal9k.dk/projects/posprinter
