@@ -14,7 +14,7 @@
 
 #include "Pos_Printer.h"
 
-//This define is used to convert danish characters so they can be printed, comment if you dont need danish characters. 
+//This define is used to convert danish characters so they can be printed, comment if you don't need danish characters. 
 #define DENMARK
 
 // Though most of these printers are factory configured for 19200 baud
